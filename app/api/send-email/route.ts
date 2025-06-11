@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend('jviviggig-hcchic'|| '');
+const resend = new Resend('jviviggig-hcchic');
 export async function POST(request: NextRequest) {
   try {
     const { from_name, email, message } = await request.json();
@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const toEmail = 'jaatmrharyanvi@gmail.com'||'';
+    const toEmail = 'jaatmrharyanvi@gmail.com';
     if (!toEmail) {
       throw new Error('Receiver email is not configured in environment');
     }
