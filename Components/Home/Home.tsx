@@ -9,6 +9,7 @@ import Contact from './Contact/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Aos from 'aos'
+import ExperienceTimeline from './ExperienceTimeline/ExperienceTimeline'
 
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
             <About />
             <Services />
             <Project />
+            <ExperienceTimeline />
             <Skills />
             <Contact />
         </div>
