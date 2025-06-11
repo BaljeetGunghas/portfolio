@@ -18,6 +18,7 @@ const Services = () => {
                                 data-aos="zoom-in-up"
                                 data-aos-delay={index * 100} // Stagger effect
                                 data-aos-duration="800"
+                                className='h-[100%]'
                             >
                                 <ServicesCard service={Service} />
                             </div>

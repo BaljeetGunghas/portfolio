@@ -4,7 +4,7 @@ import React from 'react'
 import { FaDownload } from 'react-icons/fa'
 
 const Hero = () => {
-     return (
+    return (
         <div className='w-full pt-[4rem] md:pt-[12rem] h-screen bg-[#0f0715] overflow-hidden relative'>
             <div className='flex justify-center flex-col w-4/5 h-full mx-auto'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-12'>
@@ -36,9 +36,14 @@ const Hero = () => {
                             data-aos='fade-up'
                             data-aos-delay="500"
                             data-aos-duration="1000"
-                            className='md:px-8 md:py-2.5 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-blue-700 hover:bg-blue-950 flex items-center space-x-2'
+                            className='p-4 md:px-8 md:py-2.5 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 cursor-pointer rounded-lg mt-8 bg-blue-700 hover:bg-blue-950 flex items-center space-x-2'
                         >
+                            <a
+                                href={'BALJEETSINGHRESUME.pdf'}
+                                download
+                            >
                             <span>Download CV</span>
+                            </a>
                             <FaDownload />
                         </button>
                     </div>
@@ -48,14 +53,14 @@ const Hero = () => {
                         data-aos='zoom-in'
                         data-aos-delay="600"
                         data-aos-duration="1200"
-                        className=' mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden '
+                        className=' mx-auto  lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-x-hidden '
                     >
                         <Image
                             src={BaseInfo.profilePic}
                             alt={BaseInfo.name}
                             width={500}
                             height={500}
-                            // className='object-cover w-full h-full rounded-[3rem]'
+                        // className='object-cover w-full h-full rounded-[3rem]'
                         />
                     </div>
                 </div>
