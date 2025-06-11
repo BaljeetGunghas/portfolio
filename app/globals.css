@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+    .nav__link {
+        @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 text-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right
+    }
+    .text-bg{
+        background-image: linear-gradient(to right , #8750f7 0% , #fff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar{
+        width: 8px;
+        height: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track{
+        background-color: #4402ef;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb{
+        background: #c277fa;
+        border-radius: 10px;
+    }
+}
