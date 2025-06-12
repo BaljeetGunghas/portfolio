@@ -1,7 +1,6 @@
 import { contactData } from '@/Data/data'
 import React from 'react'
 import {
-    FaAddressCard,
     FaEnvelope,
     FaGithub,
     FaLinkedin,

@@ -6,7 +6,6 @@ import Services from './Services/Services'
 import Project from './Project/Project'
 import Skills from './Skills/Skills'
 import Contact from './Contact/Contact'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Aos from 'aos'
 import ExperienceTimeline from './ExperienceTimeline/ExperienceTimeline'

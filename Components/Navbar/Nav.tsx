@@ -53,7 +53,7 @@ const Nav = ({ openNav }: Props) => {
                         })}
                     </div>
                     <div className=' flex items-center space-x-4' >
-                        <button onClick={e=>setIsHireModelOpen(true)} className='md:px-10 md:py-3 px-8 py-3 text-blue-700 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg cursor-pointer  '>
+                        <button onClick={()=>setIsHireModelOpen(true)} className='md:px-10 md:py-3 px-8 py-3 text-blue-700 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg cursor-pointer  '>
                             Hire ME
                         </button>
                     </div>

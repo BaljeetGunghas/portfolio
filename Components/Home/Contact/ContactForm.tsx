@@ -1,8 +1,7 @@
 "use client";
 
 import ErrorMessage from '@/Components/ErrorMessage/ErrorMessage';
-import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { MdOutlineError } from 'react-icons/md';
+import React, { useState, ChangeEvent } from 'react';
 // import emailjs from 'emailjs-com';
 
 interface FormData {
@@ -149,9 +148,9 @@ const ContactForm: React.FC = () => {
 
     return (
         <div className='bg-[#140c1c] rounded-lg p-4 sm:p-4'>
-            <h2 className='text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold'>Let's Work Together!</h2>
+            <h2 className='text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold'>Let&apos;s Work Together!</h2>
             <p className='text-gray-200 mt-3 lg:text-base text-xs md:text-sm'>
-                I'm always excited to collaborate on meaningful and impactful projects. Let's build something great together — drop me a message and I'll get back to you soon!
+                I&apos;m always excited to collaborate on meaningful and impactful projects. Let&apos;s build something great together — drop me a message and I&apos;ll get back to you soon!
             </p>
 
             <form className="mt-8 block w-full overflow-hidden" onSubmit={sendEmail}>
