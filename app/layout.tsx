@@ -13,8 +13,8 @@ const fonts = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Baljeet Gunghas @ Portfolio",
-  description: "Protfolio of my as an softerwer developer!",
+  title: "Baljeet Gunghas | Full-Stack Web Developer Portfolio",
+  description: "Explore the portfolio of Baljeet Gunghas, a full-stack web developer crafting scalable, responsive, and user-focused web applications.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fonts} antialiased bg-black custom-scrollbar`}
+        className={`${fonts} antialiased bg-black custom-scrollbar scroll-smooth`}
       >
         <div style={{ position: 'relative', overflow: 'hidden', zIndex: 10000 }}>
           <SplashCursor />

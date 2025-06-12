@@ -9,10 +9,10 @@ const Footer = () => {
             {/* Logo */}
             <div>
                 <Image
-                    src={'/images/logo1.png'}
+                    src={'/images/logo.png'}
                     alt='Baljeet Gunghas'
-                    width={180}
-                    height={180}
+                    width={220}
+                    height={220}
                     className=' filter invert brightness-200 contrast-150 mx-auto'
                 />
             </div>

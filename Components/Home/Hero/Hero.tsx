@@ -32,20 +32,20 @@ const Hero = () => {
                             {BaseInfo.description}
                         </p>
 
-                        <button
-                            data-aos='fade-up'
-                            data-aos-delay="500"
-                            data-aos-duration="1000"
-                            className='p-4 md:px-8 md:py-2.5 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 cursor-pointer rounded-lg mt-8 bg-blue-700 hover:bg-blue-950 flex items-center space-x-2'
+                        <a
+                            href={'BALJEETSINGHRESUME.pdf'}
+                            download
                         >
-                            <a
-                                href={'BALJEETSINGHRESUME.pdf'}
-                                download
+                            <button
+                                data-aos='fade-up'
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                className='p-4 md:px-8 md:py-2.5 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-200 cursor-pointer rounded-lg mt-8 bg-blue-700 hover:bg-blue-950 flex items-center space-x-2'
                             >
-                            <span>Download CV</span>
-                            </a>
-                            <FaDownload />
-                        </button>
+                                <span>Download CV</span>
+                                <FaDownload />
+                            </button>
+                        </a>
                     </div>
 
                     {/* Profile Image */}

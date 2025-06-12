@@ -7,7 +7,7 @@ import ServicesCard from './ServicesCard'
 
 const Services = () => {
     return (
-        <div className=' pt-16 pb-16 bg-[#050715] '>
+        <div id='services' className='scroll-mt-16 pt-16 pb-16 bg-[#050715] '>
             <SectionHeading data-aos="fade-down" data-aos-duration="1000">Services</SectionHeading>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 w-[80%] mx-auto items-center mt-20 '>
                 {
