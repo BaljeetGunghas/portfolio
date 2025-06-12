@@ -1,9 +1,11 @@
+"use server";
+
 // app/api/send-email/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend('jviviggig-hcchic');
 export async function POST(request: NextRequest) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const { from_name, email, message } = await request.json();
 
@@ -14,28 +16,29 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const toEmail = 'jaatmrharyanvi@gmail.com';
+    const toEmail = process.env.CONTACT_RECEIVER_EMAIL;
     if (!toEmail) {
       throw new Error('Receiver email is not configured in environment');
     }
 
 
-    await resend.emails.send({
-      from: `onboarding@resend.dev`, // use your verified sender
+    const response = await resend.emails.send({
+      from: 'onboarding@resend.dev',
       to: toEmail,
-      subject: `New message from ${from_name}`,
-      html: '<p>It works!</p>',
+      subject: 'Test Email',
+      html: '<p>Hello from Next.js API route!</p>',
     });
+    console.log('Resend send email response:', response);
 
 
     return NextResponse.json({ message: 'Email sent successfully' });
- } catch (error: unknown) {
-  const err = error as Error;
-  console.error('Error sending email:', err.message);
+  } catch (error: unknown) {
+    const err = error as Error;
+    console.error('Error sending email:', err.message);
 
-  return NextResponse.json(
-    { message: 'Failed to send email', error: err.message },
-    { status: 500 }
-  );
+    return NextResponse.json(
+      { message: 'Failed to send email', error: err.message },
+      { status: 500 }
+    );
   }
 }

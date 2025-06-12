@@ -31,8 +31,8 @@ const MobileNaveBar = ({ showNav, closeNav }: Props) => {
                     )
                 })}
                 {/* {close button} */}
-                <Image src={'/images/logo1.png'} alt='Baljeet gunghas' width={120} height={100} className='absolute top-[-0.25rem] left-[0.7rem] sm:ml-0 filter invert brightness-200 contrast-150' />
-                <CgClose onClick={closeNav} className='absolute top-[1rem] right-[2rem] sm:w-8 sm:h-8 w-6 h-6 text-white ' />
+                <Image src={'/images/logo.png'} alt='Baljeet gunghas' width={220} height={220} className='absolute -top-[1.1rem] -left-[1.3rem] sm:ml-0 filter invert brightness-200 contrast-150' />
+                <CgClose onClick={closeNav} className='absolute top-[1rem] right-[2rem] sm:w-8 sm:h-8 w-6 h-6 text-white cursor-pointer ' />
                 {/* </div> */}
             </div>
         </>

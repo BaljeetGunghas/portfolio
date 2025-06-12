@@ -2,16 +2,16 @@ export const BaseInfo = {
   name: "Baljeet Singh",
   position: "Full Stack Developer",
   description:
-    "Full Stack Developer with 3.4 years in front-end and 2.4 years in software development. Proficient in React, Next.js, TypeScript, Node.js, Express, and MongoDB. Passionate about building scalable and responsive web applications.",
+    "Full Stack Developer with 3.4 years in frontend and 2.4 years in backend development. Proficient in React, Next.js, TypeScript, Node.js, Express, and MongoDB. Passionate about building scalable and responsive web applications.",
   profilePic: "/images/hero.png",
 };
 
 
 export const aboutInfo = {
-  title: "Crafting Scalable Web Solutions with Precision",
+  title: "Building Impactful Digital Experiences with Scalable Architecture",
   description:
-    "With a solid background in frontend and backend technologies, I specialize in creating responsive, performant, and user-centric applications. My focus is on writing clean code, solving real-world problems, and delivering exceptional digital experiences.",
-  client: "10+",
+    "I bring 3+ years of hands-on experience across the full web stack, delivering high-performance, scalable applications tailored to user needs. With a passion for clean code and intuitive design, I turn complex challenges into seamless digital solutions that drive real results.",
+  client: "2+",
   experience: "3+",
   project: "50+",
   website: "10+",
@@ -21,13 +21,13 @@ export const servicesData = [
   {
     id: 1,
     title: "Full-Stack Development",
-    description: "Robust web applications using React, Next.js, Node.js, and MongoDB.",
+    description: "Robust, end-to-end web applications with React, Next.js, Node.js, and MongoDB.",
     icon: "/images/s1.png",
   },
   {
     id: 2,
     title: "Responsive UI Design",
-    description: "User-first designs with HTML, CSS, Tailwind, and Bootstrap.",
+    description: "Responsive, user-first interfaces using HTML, CSS, Tailwind CSS, and Bootstrap.",
     icon: "/images/s4.png",
   },
   {
@@ -51,7 +51,7 @@ export const servicesData = [
   {
     id: 6,
     title: "Email & Notification Systems",
-    description: "Real-time alerts and email systems using Nodemailer and WebSockets.",
+    description: "Real-time notifications and transactional emails using Nodemailer and WebSockets.",
     icon: "/images/s6.png",
   },
 ];
@@ -94,9 +94,14 @@ export const projectData = [
     url: "https://linkdin-posts-viewer.netlify.app/",
   },
   {
+    id: 11,
+    image: "/images/p11.png",
+    url: "https://baljeetgirmantech.netlify.app/",
+  },
+  {
     id: 4,
     image: "/images/p4.png",
-    url: "https://baljeetgirmantech.netlify.app/",
+    url: "https://baljeetcityweather.netlify.app//",
   },
   {
     id: 5,
@@ -113,77 +118,16 @@ export const projectData = [
 
 export const skillsData = [
   { id: 1, title: "React", image: "/images/react.svg", percent: "90%" },
-  { id: 2, title: "JavaScript", image: "/images/js.svg", percent: "85%" },
-  { id: 3, title: "TypeScript", image: "/images/ts.svg", percent: "80%" },
-  { id: 4, title: "Node.js", image: "/images/node.svg", percent: "80%" },
+  { id: 8, title: "HTML", image: "/images/html.svg", percent: "95%" },
+  { id: 9, title: "CSS", image: "/images/css.svg", percent: "95%" },
+  { id: 2, title: "JavaScript", image: "/images/js.svg", percent: "90%" },
   { id: 5, title: "Next.js", image: "/images/next.webp", percent: "85%" },
+  { id: 4, title: "Node.js", image: "/images/node.svg", percent: "75%" },
   { id: 6, title: "MongoDB", image: "/images/mongo.svg", percent: "75%" },
-  { id: 7, title: "MySQL", image: "/images/sql.svg", percent: "70%" },
-  { id: 8, title: "HTML", image: "/images/html.svg", percent: "90%" },
-  { id: 9, title: "CSS", image: "/images/css.svg", percent: "90%" },
-  { id: 10, title: "Redux", image: "/images/redux.svg", percent: "75%" },
+  { id: 7, title: "SQL & MySQL", image: "/images/sql.svg", percent: "70%" },
+  { id: 10, title: "Redux", image: "/images/redux.svg", percent: "80%" },
+  { id: 3, title: "TypeScript", image: "/images/ts.svg", percent: "80%" },
   { id: 11, title: "Tailwind CSS", image: "/images/tailwind.svg", percent: "90%" },
-];
-export const clientReviews = [
-  {
-    name: "John Doe",
-    review:
-      "Exceptional service! The team delivered exactly what we needed on time. Very professional",
-    rating: 5,
-    profession: "Marketing Manager",
-    image: "/images/u1.jpg",
-  },
-  {
-    name: "Jane Smith",
-    review:
-      "Highly skilled developers who understand the client's vision and execute perfectly.",
-    rating: 4.8,
-    profession: "Business Owner",
-    image: "/images/u2.jpg",
-  },
-  {
-    name: "Michael Johnson",
-    review:
-      "Great communication and excellent results. Our new site performs beautifully.",
-    rating: 4.6,
-    profession: "Project Coordinator",
-    image: "/images/u3.jpg",
-  },
-  {
-    name: "Emily Brown",
-    review:
-      "Professional, efficient, and highly knowledgeable. Would definitely recommend their services!",
-    rating: 4.9,
-    profession: "Creative Director",
-    image: "/images/u4.jpg",
-  },
-];
-
-export const blogs = [
-  {
-    id: 1,
-    title: "Top Web Development Trends to Watch in 2024",
-    summary:
-      "Explore the key web development trends for 2024 and their impact on your business.",
-    date: "August 18, 2024",
-    image: "/images/b1.jpg",
-  },
-  {
-    id: 2,
-    title: "Why Your Business Needs a Custom Web Application",
-    summary:
-      "Discover why custom web applications are crucial for driving business growth and efficiency.",
-    date: "August 10, 2024",
-    image: "/images/b2.jpg",
-  },
-  {
-    id: 3,
-    title: "The Importance of Website Speed Optimization",
-    summary:
-      "Understand how website speed impacts user experience and learn essential optimization tips.",
-    date: "July 25, 2024",
-    image: "/images/b3.jpg",
-  },
 ];
 
 export const contactData = {
@@ -208,7 +152,7 @@ export const experiences: Experience[] = [
     role: 'FullStack Engineer',
     duration: 'Feb 2023 – Mar 2025',
     description:
-      'Built and deployed 5+ applications using React, TypeScript, Next.js, Node.js, and SQL. Solved 15+ technical issues, collaborated with a 10+ member team, and improved efficiency by 20%.',
+      'Built and deployed 2+ applications using React, TypeScript, Next.js, Node.js, and SQL. Solved 15+ technical issues, collaborated with a 10+ member team, and improved efficiency by 20%.',
   },
   {
     company: 'GoMechanic',

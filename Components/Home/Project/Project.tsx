@@ -6,7 +6,7 @@ import React from 'react'
 
 const Project = () => {
     return (
-        <div className=' pt-16 pb-16 bg-[#050709] '>
+        <div id='project' className='scroll-mt-16 pt-16 pb-16 bg-[#050709] '>
             <SectionHeading data-aos="fade-down" data-aos-duration="1000">my Projects</SectionHeading>
             <div className='w-[80%] mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center '>
                 {projectData.map((project, index) => {

@@ -6,7 +6,7 @@ import { FaCheck } from 'react-icons/fa'
 
 const About = () => {
   return (
-    <div className=' pt-16 pb-16 bg-[#050709] '>
+    <div id='about' className='scroll-mt-16 pt-16 pb-16 bg-[#050709] '>
         <SectionHeading data-aos="fade-down" data-aos-duration="1000">About Me</SectionHeading>
         <div className=' w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20 '>
             {/* Left Content */}
@@ -45,7 +45,7 @@ const About = () => {
                 <div data-aos="zoom-in" data-aos-delay="200">
                     <Image src={'/images/experience.png'} alt='image' width={80} height={80} className='mx-auto' />
                     <p className='mt-3 font-bold text-lg text-white text-center '>{aboutInfo.experience}</p>
-                    <p className='text-base sm:text-lg text-gray-400 text-center '>Years Exprience</p>
+                    <p className='text-base sm:text-lg text-gray-400 text-center '>Years Experience</p>
                 </div>
                 <div data-aos="zoom-in" data-aos-delay="300">
                     <Image src={'/images/completed.png'} alt='image' width={80} height={80} className='mx-auto' />

@@ -5,7 +5,7 @@ import { FaBuilding, FaCalendarAlt } from 'react-icons/fa';
 
 const ExperienceTimeline: React.FC = () => {
     return (
-        <div className="pt-16 pb-20 bg-[#050709] text-white relative">
+        <div id='experience' className="scroll-mt-16 pt-16 pb-20 bg-[#050709] text-white relative">
             <SectionHeading data-aos="fade-down" data-aos-duration="1000">My Experience</SectionHeading>
 
             <div className="relative w-[95%] max-w-6xl mx-auto mt-20">
