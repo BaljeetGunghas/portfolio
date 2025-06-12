@@ -1,5 +1,6 @@
 import { navLinks } from '@/Constant/constant'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -19,10 +20,10 @@ const Footer = () => {
 
             {/* Navigation Links */}
             <div className='flex items-center flex-wrap justify-center space-x-10 space-y-4 text-white font-bold mt-6'>
-                {navLinks.map((link, index) => (
-                    <div key={index} className='my-0'>
-                        {link.label}
-                    </div>
+                {navLinks.map((navLink) => (
+                    <Link href={navLink.url} key={navLink.id}>
+                        <p className='nav__link'>{navLink.label}</p>
+                    </Link>
                 ))}
             </div>
 
