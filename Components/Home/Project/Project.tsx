@@ -13,13 +13,13 @@ const Project = () => {
                     return (
                         <div
                             key={project.id}
-                            className=' bg-blue-950 p-6 rounded-lg hover:scale-105 transition-all duration-300 '
+                            className=' bg-blue-950 p-6 rounded-lg  '
                             data-aos="fade-up"
                             data-aos-delay={index * 100}
                             data-aos-duration="800"
                         >
                             <Link href={project.url} target='_blank'>
-                                <Image src={project.image} alt='project' width={300} height={200} />
+                                <Image src={project.image} alt='project' width={350} height={200} className='hover:scale-110 transition-all duration-300 object-cover rounded-md' />
                             </Link>
                         </div>
                     )
