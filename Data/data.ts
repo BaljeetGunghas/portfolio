@@ -89,6 +89,11 @@ export const projectData = [
     url: "https://www.edustoke.com/",
   },
   {
+    id: 12,
+    image: "/images/p12.png",
+    url: "https://liberary.netlify.app/",
+  },
+  {
     id: 3,
     image: "/images/p3.png",
     url: "https://linkdin-posts-viewer.netlify.app/",

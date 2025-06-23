@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
         <td style="padding: 8px;">${message}</td>
       </tr>
     </table>
-    <p style="margin-top: 20px; color: #555;">This message was sent via your Next.js contact form.</p>
+    <p style="margin-top: 20px; color: #555;">This message was sent via your Portfolio contact form.</p>
   </div>
     `;
 
