@@ -1,24 +1,24 @@
 import { BaseInfo } from '@/Data/data'
 import Image from 'next/image'
 import React from 'react'
-import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaDownload, FaGithub, FaLinkedin, FaTrophy, FaUsers, FaChartLine, FaCode } from 'react-icons/fa'
 
 const Hero = () => {
     return (
-        <div className='w-full pt-[4rem] md:pt-[12rem] h-screen bg-[#0f0715] overflow-hidden relative'>
-            <div className='flex justify-center flex-col w-4/5 h-full mx-auto'>
-                <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-12'>
+        <div className='w-full pt-[2rem] md:pt-[8rem] pb-8 md:pb-0 min-h-screen bg-[#0f0715] overflow-hidden relative'>
+            <div className='flex justify-center flex-col w-11/12 md:w-4/5 h-full mx-auto'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-6 md:gap-12'>
                     {/* Text Content */}
                     <div data-aos='fade-right' data-aos-duration="1000">
                         {/* Badge */}
-                        <div className='mb-6 inline-block'>
-                            <span className='text-xs md:text-sm bg-blue-900 bg-opacity-50 text-blue-200 px-4 py-2 rounded-full border border-blue-700'>
-                                Senior Software Engineer • 4+ Years Experience
+                        <div className='mb-4 md:mb-6 inline-block'>
+                            <span className='text-xs bg-blue-900 bg-opacity-50 text-blue-200 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-blue-700'>
+                                Senior Software Engineer • 4+ Years
                             </span>
                         </div>
 
                         {/* Main Headline */}
-                        <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-6 text-gray-100 font-bold leading-tight'>
+                        <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 text-gray-100 font-bold leading-tight'>
                             {BaseInfo.tagline}
                         </h1>
 
@@ -27,33 +27,45 @@ const Hero = () => {
                             data-aos='fade-up'
                             data-aos-delay="150"
                             data-aos-duration="1000"
-                            className='text-base md:text-lg text-gray-300 leading-relaxed mb-6 max-w-[40rem]'
+                            className='text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed mb-6 max-w-[40rem]'
                         >
                             {BaseInfo.description}
                         </h2>
 
-                        {/* Quick Stats */}
-                        <div className='grid grid-cols-2 gap-4 mb-8 py-6 border-y border-gray-700'>
-                            <div data-aos='fade-up' data-aos-delay="200">
-                                <div className='text-2xl md:text-3xl font-bold text-blue-400'>4+</div>
-                                <p className='text-sm text-gray-400'>Years Experience</p>
+                        {/* Impact Metrics - For High-Paying Roles */}
+                        <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 mb-8 md:mb-10 py-4 md:py-6'>
+                            <div data-aos='fade-up' data-aos-delay="200" className='bg-blue-950 bg-opacity-40 border border-blue-900 rounded-lg p-3 md:p-4 hover:bg-opacity-60 transition'>
+                                <div className='flex items-center gap-2 mb-1.5'>
+                                    <FaTrophy className='text-yellow-500 w-3 h-3 md:w-4 md:h-4' />
+                                    <div className='text-xl md:text-2xl lg:text-3xl font-bold text-blue-400'>4+</div>
+                                </div>
+                                <p className='text-xs text-gray-400'>Years Senior</p>
                             </div>
-                            <div data-aos='fade-up' data-aos-delay="250">
-                                <div className='text-2xl md:text-3xl font-bold text-blue-400'>100k+</div>
-                                <p className='text-sm text-gray-400'>Users Served</p>
+                            <div data-aos='fade-up' data-aos-delay="250" className='bg-emerald-950 bg-opacity-40 border border-emerald-900 rounded-lg p-3 md:p-4 hover:bg-opacity-60 transition'>
+                                <div className='flex items-center gap-2 mb-1.5'>
+                                    <FaUsers className='text-emerald-400 w-3 h-3 md:w-4 md:h-4' />
+                                    <div className='text-xl md:text-2xl lg:text-3xl font-bold text-emerald-400'>100k+</div>
+                                </div>
+                                <p className='text-xs text-gray-400'>Users</p>
                             </div>
-                            <div data-aos='fade-up' data-aos-delay="300">
-                                <div className='text-2xl md:text-3xl font-bold text-blue-400'>4</div>
-                                <p className='text-sm text-gray-400'>Apps Shipped</p>
+                            <div data-aos='fade-up' data-aos-delay="300" className='bg-purple-950 bg-opacity-40 border border-purple-900 rounded-lg p-3 md:p-4 hover:bg-opacity-60 transition'>
+                                <div className='flex items-center gap-2 mb-1.5'>
+                                    <FaChartLine className='text-purple-400 w-3 h-3 md:w-4 md:h-4' />
+                                    <div className='text-xl md:text-2xl lg:text-3xl font-bold text-purple-400'>62%</div>
+                                </div>
+                                <p className='text-xs text-gray-400'>Perf Gain</p>
                             </div>
-                            <div data-aos='fade-up' data-aos-delay="350">
-                                <div className='text-2xl md:text-3xl font-bold text-blue-400'>62%</div>
-                                <p className='text-sm text-gray-400'>Perf Improvement</p>
+                            <div data-aos='fade-up' data-aos-delay="350" className='bg-orange-950 bg-opacity-40 border border-orange-900 rounded-lg p-3 md:p-4 hover:bg-opacity-60 transition'>
+                                <div className='flex items-center gap-2 mb-1.5'>
+                                    <FaCode className='text-orange-400 w-3 h-3 md:w-4 md:h-4' />
+                                    <div className='text-xl md:text-2xl lg:text-3xl font-bold text-orange-400'>17+</div>
+                                </div>
+                                <p className='text-xs text-gray-400'>Projects</p>
                             </div>
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className='flex flex-wrap items-center gap-4'>
+                        <div className='flex flex-wrap items-center gap-2 md:gap-4'>
                             <a
                                 href={'BALJEETSINGHRESUME.pdf'}
                                 download
@@ -61,9 +73,9 @@ const Hero = () => {
                                 data-aos-delay="500"
                                 data-aos-duration="1000"
                             >
-                                <button className='px-6 md:px-8 py-3 text-white font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer rounded-lg bg-blue-700 hover:bg-blue-950 flex items-center space-x-2'>
-                                    <span>Download Resume</span>
-                                    <FaDownload />
+                                <button className='px-4 md:px-6 py-2 md:py-3 text-white font-semibold text-xs md:text-sm transition-all duration-200 cursor-pointer rounded-lg bg-blue-700 hover:bg-blue-950 flex items-center gap-1.5 md:gap-2 whitespace-nowrap'>
+                                    <span>Resume</span>
+                                    <FaDownload className='w-3 h-3 md:w-4 md:h-4' />
                                 </button>
                             </a>
 
@@ -75,9 +87,9 @@ const Hero = () => {
                                 data-aos-delay="600"
                                 data-aos-duration="1000"
                             >
-                                <button className='px-6 md:px-8 py-3 text-blue-400 font-semibold text-sm md:text-base border-2 border-blue-700 hover:bg-blue-900 hover:bg-opacity-20 transition-all duration-200 cursor-pointer rounded-lg flex items-center space-x-2'>
-                                    <span>View GitHub</span>
-                                    <FaGithub />
+                                <button className='px-4 md:px-6 py-2 md:py-3 text-blue-400 font-semibold text-xs md:text-sm border-2 border-blue-700 hover:bg-blue-900 hover:bg-opacity-20 transition-all duration-200 cursor-pointer rounded-lg flex items-center gap-1.5 md:gap-2 whitespace-nowrap'>
+                                    <span>GitHub</span>
+                                    <FaGithub className='w-3 h-3 md:w-4 md:h-4' />
                                 </button>
                             </a>
 
@@ -89,9 +101,9 @@ const Hero = () => {
                                 data-aos-delay="700"
                                 data-aos-duration="1000"
                             >
-                                <button className='px-6 md:px-8 py-3 text-blue-400 font-semibold text-sm md:text-base border-2 border-blue-700 hover:bg-blue-900 hover:bg-opacity-20 transition-all duration-200 cursor-pointer rounded-lg flex items-center space-x-2'>
+                                <button className='px-4 md:px-6 py-2 md:py-3 text-blue-400 font-semibold text-xs md:text-sm border-2 border-blue-700 hover:bg-blue-900 hover:bg-opacity-20 transition-all duration-200 cursor-pointer rounded-lg flex items-center gap-1.5 md:gap-2 whitespace-nowrap'>
                                     <span>LinkedIn</span>
-                                    <FaLinkedin />
+                                    <FaLinkedin className='w-3 h-3 md:w-4 md:h-4' />
                                 </button>
                             </a>
                         </div>

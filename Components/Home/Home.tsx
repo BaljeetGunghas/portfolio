@@ -10,6 +10,7 @@ import SystemDesign from './SystemDesign/SystemDesign'
 import EngineringImpact from './Impact/EngineringImpact'
 import TechnicalLeadership from './Leadership/TechnicalLeadership'
 import ExperienceTimeline from './ExperienceTimeline/ExperienceTimeline'
+import WhyHireMe from './WhyHireMe/WhyHireMe'
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
         <div className='overflow-hidden'>
             <Hero />
             <About />
+            <WhyHireMe />
             <Services />
             <Project />
             <SystemDesign />

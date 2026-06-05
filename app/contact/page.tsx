@@ -45,7 +45,7 @@ const ContactPage = () => {
                     href="https://calendly.com/baljeetgunghas5"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className='group'
+                    className='group block'
                 >
                     <div className='bg-[#1a0f26] border-2 border-purple-900 hover:border-purple-600 hover:bg-[#261a34] rounded-lg p-5 md:p-6 text-center transition-all duration-300 cursor-pointer transform hover:scale-105 h-full'>
                         <div className='w-12 h-12 md:w-14 md:h-14 bg-purple-900 group-hover:bg-purple-800 rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4 transition-all'>

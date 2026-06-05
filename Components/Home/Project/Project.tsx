@@ -122,10 +122,15 @@ const Project = () => {
 
             {/* View All Case Studies CTA */}
             <div className='text-center mt-12'>
-                <p className='text-gray-400 mb-4'>Want to see more detailed case studies?</p>
-                <button className='px-8 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-all duration-200'>
+                <p className='text-gray-400 mb-4'>Want to dive deeper into these projects?</p>
+                <a
+                    href="https://calendly.com/baljeetgunghas5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className='inline-block px-8 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-all duration-200'
+                >
                     Schedule a Call to Discuss
-                </button>
+                </a>
             </div>
         </div>
     )
