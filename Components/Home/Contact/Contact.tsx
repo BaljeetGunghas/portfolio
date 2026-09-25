@@ -32,13 +32,13 @@ const Contact = () => {
                             <h3 className='text-xl md:text-2xl font-bold text-white mb-4'>Ready for Your Next Challenge</h3>
 
                             <p className='text-gray-300 text-sm md:text-base leading-relaxed mb-6'>
-                                I'm actively exploring <span className='font-bold text-white'>Senior Software Engineer</span> roles where I can drive technical excellence and business impact.
+                                I&apos;m actively exploring <span className='font-bold text-white'>Senior Software Engineer</span> roles where I can drive technical excellence and business impact.
                             </p>
 
                             <div className='bg-[#0f0715] rounded-lg p-4 md:p-5 border border-blue-900 mb-6'>
                                 <p className='text-blue-300 font-semibold text-xs md:text-sm mb-3'>Details:</p>
                                 <ul className='text-xs md:text-sm text-gray-400 space-y-2'>
-                                    <li>• Location: Remote, Bangalore, Mumbai</li>
+                                    <li>• Location: Remote, Delhi, Gurgaon, Noida, Chandigarh, Bangalore, Mumbai, Pune</li>
                                     <li>• Start: Immediate</li>
                                     <li>• Response: Within 24 hours</li>
                                 </ul>

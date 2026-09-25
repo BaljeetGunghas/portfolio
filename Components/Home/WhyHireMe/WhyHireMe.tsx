@@ -62,7 +62,7 @@ const WhyHireMe = () => {
                 </SectionHeading>
 
                 <p className='text-center text-gray-400 max-w-3xl mx-auto mt-6 mb-16 text-base md:text-lg'>
-                    I don't just code—I drive measurable business impact. Here's what you get when you hire a senior engineer who cares about outcomes.
+                    I don&apos;t just code—I drive measurable business impact. Here&apos;s what you get when you hire a senior engineer who cares about outcomes.
                 </p>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
@@ -108,7 +108,7 @@ const WhyHireMe = () => {
                             Ready to Build Something Great?
                         </h3>
                         <p className='text-gray-300 mb-6'>
-                            I'm actively looking for challenging roles where I can ship fast, scale systems, and mentor teams. Let's talk about what we can build together.
+                            I&apos;m actively looking for challenging roles where I can ship fast, scale systems, and mentor teams. Let&apos;s talk about what we can build together.
                         </p>
                         <a href="/contact" className='inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors'>
                             Start a Conversation

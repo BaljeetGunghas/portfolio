@@ -52,7 +52,7 @@ const Nav = ({ openNav }: Props) => {
                             onClick={() => router.push('/contact')}
                             className='md:px-6 md:py-2.5 px-6 py-2 text-blue-700 font-semibold text-xs md:text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg cursor-pointer whitespace-nowrap'
                         >
-                            Let's Talk
+                            Let&apos;s Talk
                         </button>
                     </div>
                     <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden' />

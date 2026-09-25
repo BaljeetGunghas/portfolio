@@ -1,6 +1,5 @@
 import SectionHeading from '@/Components/Healper/SectionHeading'
 import { aboutInfo } from '@/Data/data'
-import Image from 'next/image'
 import React from 'react'
 import { FaCheck, FaCode, FaDatabase, FaServer } from 'react-icons/fa'
 

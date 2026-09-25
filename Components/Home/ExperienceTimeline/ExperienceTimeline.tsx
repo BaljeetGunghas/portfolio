@@ -1,7 +1,7 @@
 import SectionHeading from '@/Components/Healper/SectionHeading';
 import { experiences } from '@/Data/data';
 import React from 'react';
-import { FaBuilding, FaCalendarAlt, FaAward, FaCheckCircle } from 'react-icons/fa';
+import { FaBuilding, FaCalendarAlt, FaCheckCircle } from 'react-icons/fa';
 
 const ExperienceTimeline: React.FC = () => {
     return (

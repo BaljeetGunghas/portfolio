@@ -109,10 +109,10 @@ const Project = () => {
                                             View Live Demo
                                         </button>
                                     </Link>
-                                    <button className='flex-1 min-w-max px-6 py-2 border border-blue-700 text-blue-400 text-sm font-semibold rounded-lg hover:bg-blue-900 hover:bg-opacity-20 transition-all duration-200 flex items-center justify-center gap-2'>
+                                    <Link href={caseStudy.githubUrl} target='_blank' className='flex-1 min-w-max px-6 py-2 border border-blue-700 text-blue-400 text-sm font-semibold rounded-lg hover:bg-blue-900 hover:bg-opacity-20 transition-all duration-200 flex items-center justify-center gap-2'>
                                         <FaGithub className='w-4 h-4' />
                                         GitHub
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

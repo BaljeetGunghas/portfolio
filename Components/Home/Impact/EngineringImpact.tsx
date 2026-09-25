@@ -76,12 +76,12 @@ const EngineringImpact = () => {
                             <div>
                                 <p className='text-3xl font-bold text-blue-300'>62%</p>
                                 <p className='text-sm text-gray-400'>API Latency Reduction</p>
-                                <p className='text-xs text-gray-500 mt-1'>800ms → 300ms average</p>
+                                <p className='text-xs text-gray-500 mt-1'>800ms &rarr; 300ms average</p>
                             </div>
                             <div>
                                 <p className='text-2xl font-bold text-emerald-300'>94%</p>
                                 <p className='text-sm text-gray-400'>Query Optimization</p>
-                                <p className='text-xs text-gray-500 mt-1'>2.5s → 100ms queries</p>
+                                <p className='text-xs text-gray-500 mt-1'>2.5s &rarr; 100ms queries</p>
                             </div>
                         </div>
                     </div>
@@ -101,12 +101,12 @@ const EngineringImpact = () => {
                         <div className='space-y-3'>
                             <div>
                                 <p className='text-3xl font-bold text-emerald-300'>8%</p>
-                                <p className='text-sm text-gray-400'>Conversion Rate ↑</p>
+                                <p className='text-sm text-gray-400'>Conversion Rate &uarr;</p>
                                 <p className='text-xs text-gray-500 mt-1'>From performance improvements</p>
                             </div>
                             <div>
                                 <p className='text-2xl font-bold text-purple-300'>12%</p>
-                                <p className='text-sm text-gray-400'>User Retention ↑</p>
+                                <p className='text-sm text-gray-400'>User Retention &uarr;</p>
                                 <p className='text-xs text-gray-500 mt-1'>30-day retention improved</p>
                             </div>
                         </div>
@@ -147,7 +147,7 @@ const EngineringImpact = () => {
                             <div className='w-1 bg-purple-400 rounded-full'></div>
                             <div>
                                 <p className='font-bold text-white mb-1'>Scalability requires architecture thinking</p>
-                                <p className='text-sm text-gray-400'>Monolithic apps don't scale; system redesign was crucial</p>
+                                <p className='text-sm text-gray-400'>Monolithic apps don&apos;t scale; system redesign was crucial</p>
                             </div>
                         </div>
                         <div className='flex gap-4'>
@@ -168,7 +168,7 @@ const EngineringImpact = () => {
                             <div className='w-1 bg-orange-400 rounded-full'></div>
                             <div>
                                 <p className='font-bold text-white mb-1'>Monitoring is critical</p>
-                                <p className='text-sm text-gray-400'>Can't optimize what you don't measure</p>
+                                <p className='text-sm text-gray-400'>Can&apos;t optimize what you don&apos;t measure</p>
                             </div>
                         </div>
                     </div>

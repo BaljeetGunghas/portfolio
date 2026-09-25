@@ -3,7 +3,6 @@
 import React, { Suspense } from 'react'
 import dynamic from 'next/dynamic'
 import ContactInfo from '@/Components/Home/Contact/ContactInfo'
-import SectionHeading from '@/Components/Healper/SectionHeading'
 import { FaCalendarAlt, FaFileDownload, FaEnvelope, FaArrowLeft } from 'react-icons/fa'
 import Link from 'next/link'
 
@@ -17,9 +16,9 @@ const ContactPage = () => {
         <div className='bg-[#050709] min-h-screen pt-24 pb-16'>
             {/* Header */}
             <div className='text-center mb-12 md:mb-16 px-4'>
-                <h1 className='text-4xl md:text-5xl font-bold text-white mb-4'>Let's Work Together</h1>
+                <h1 className='text-4xl md:text-5xl font-bold text-white mb-4'>Let&apos;s Work Together</h1>
                 <p className='text-gray-400 max-w-2xl mx-auto text-base md:text-lg'>
-                    I'm open to Senior Software Engineer opportunities. Fill out the form below and I'll get back to you within 24 hours.
+                    I&apos;m open to Senior Software Engineer opportunities. Fill out the form below and I&apos;ll get back to you within 24 hours.
                 </p>
             </div>
 
@@ -105,7 +104,7 @@ const ContactPage = () => {
                         <div className='mt-4 pt-4 border-t border-blue-800'>
                             <p className='text-blue-300 font-semibold text-xs md:text-sm mb-3'>Details:</p>
                             <ul className='text-xs md:text-sm text-gray-400 space-y-2'>
-                                <li>✓ Location: Remote, Bangalore, Mumbai</li>
+                                <li>✓ Location: Remote, Delhi, Gurgaon, Noida, Chandigarh, Bangalore, Mumbai, Pune</li>
                                 <li>✓ Notice Period: Immediate</li>
                                 <li>✓ Response Time: Within 24 hours</li>
                             </ul>

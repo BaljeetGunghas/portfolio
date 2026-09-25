@@ -86,7 +86,7 @@ const Skills = () => {
                     <span className='font-bold text-white'>Why no percentages?</span> Skill percentages (90%, 95%) are meaningless and indicate junior-level thinking. Instead, I organize skills by domain with proficiency levels based on years of production experience and real-world outcomes.
                 </p>
                 <p className='text-gray-400 text-sm'>
-                    Each skill is backed by actual projects, performance improvements, and architectural decisions I've made at scale.
+                    Each skill is backed by actual projects, performance improvements, and architectural decisions I&apos;ve made at scale.
                 </p>
             </div>
         </div>

@@ -19,7 +19,7 @@ const ContactFormModel = ({ onClose }: Props) => {
                 {/* Header - Fixed */}
                 <div className='bg-gradient-to-r from-blue-900 to-purple-900 px-6 md:px-8 py-5 md:py-6 rounded-t-2xl border-b border-blue-800 flex items-center justify-between flex-shrink-0'>
                     <div>
-                        <h2 className='text-xl md:text-2xl font-bold text-white'>Let's Talk</h2>
+                        <h2 className='text-xl md:text-2xl font-bold text-white'>Let&apos;s Talk</h2>
                         <p className='text-blue-200 text-xs md:text-sm mt-1'>Tell me about your opportunity</p>
                     </div>
                     <button

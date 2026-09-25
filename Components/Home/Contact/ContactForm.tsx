@@ -148,7 +148,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ isModal = false }) => {
                     <FaCheckCircle className='text-emerald-400 w-10 h-10' />
                 </div>
                 <h3 className='text-3xl font-bold text-white mb-3'>Message Sent!</h3>
-                <p className='text-gray-300 mb-6 text-lg'>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                <p className='text-gray-300 mb-6 text-lg'>Thank you for reaching out. I&apos;ll get back to you within 24 hours.</p>
                 <div className='text-base text-gray-400 space-y-2'>
                     <p>📧 {formData.email}</p>
                     <p>📱 {formData.phone}</p>
@@ -161,9 +161,9 @@ const ContactForm: React.FC<ContactFormProps> = ({ isModal = false }) => {
         <div className={isModal ? '' : 'bg-[#140c1c] rounded-lg p-8 md:p-10'}>
             {!isModal && (
                 <>
-                    <h2 className='text-bg text-4xl md:text-5xl font-bold mb-4'>Let's Work Together!</h2>
+                    <h2 className='text-bg text-4xl md:text-5xl font-bold mb-4'>Let&apos;s Work Together!</h2>
                     <p className='text-gray-300 mb-10 text-base md:text-lg leading-relaxed'>
-                        I'm always excited to collaborate on meaningful and impactful projects. Let's build something great together — drop me a message and I'll get back to you soon!
+                        I&apos;m always excited to collaborate on meaningful and impactful projects. Let&apos;s build something great together — drop me a message and I&apos;ll get back to you soon!
                     </p>
                 </>
             )}
@@ -231,7 +231,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ isModal = false }) => {
 
                 {/* Role */}
                 <div>
-                    <label className='text-base font-semibold text-gray-300 block mb-3'>What's Your Role? *</label>
+                    <label className='text-base font-semibold text-gray-300 block mb-3'>What&apos;s Your Role? *</label>
                     <select
                         name="role"
                         value={formData.role}

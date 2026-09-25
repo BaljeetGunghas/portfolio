@@ -107,19 +107,19 @@ const TechnicalLeadership = () => {
                 <h3 className='text-xl font-bold text-white mb-6'>My Leadership Philosophy</h3>
                 <div className='space-y-4'>
                     <p className='text-gray-300'>
-                        <span className='font-bold text-emerald-300'>1. Lead by Example</span> - I code daily, participate in code reviews, and ship features. I don't ask my team to do anything I wouldn't do.
+                        <span className='font-bold text-emerald-300'>1. Lead by Example</span> - I code daily, participate in code reviews, and ship features. I don&apos;t ask my team to do anything I wouldn&apos;t do.
                     </p>
                     <p className='text-gray-300'>
                         <span className='font-bold text-emerald-300'>2. Create Psychological Safety</span> - My team feels safe to ask questions, experiment, and even fail. Learning is encouraged.
                     </p>
                     <p className='text-gray-300'>
-                        <span className='font-bold text-emerald-300'>3. Focus on Growth</span> - I invest in my team's growth through mentorship, challenging projects, and career guidance.
+                        <span className='font-bold text-emerald-300'>3. Focus on Growth</span> - I invest in my team&apos;s growth through mentorship, challenging projects, and career guidance.
                     </p>
                     <p className='text-gray-300'>
                         <span className='font-bold text-emerald-300'>4. Own Outcomes</span> - I take responsibility for team outcomes while holding myself and others accountable.
                     </p>
                     <p className='text-gray-300'>
-                        <span className='font-bold text-emerald-300'>5. Communicate Clearly</span> - I explain the "why" behind decisions and keep everyone aligned on goals.
+                        <span className='font-bold text-emerald-300'>5. Communicate Clearly</span> - I explain the &quot;why&quot; behind decisions and keep everyone aligned on goals.
                     </p>
                 </div>
             </div>
