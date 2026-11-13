@@ -5,21 +5,21 @@ import { FaArrowUp, FaChartLine, FaCoins, FaTachometerAlt } from 'react-icons/fa
 
 const EngineringImpact = () => {
     return (
-        <div id='impact' className='scroll-mt-16 pt-16 pb-16 bg-[#050709]'>
-            <div className='text-center mb-8'>
-                <SectionHeading data-aos="fade-down" data-aos-duration="1000">Engineering Impact</SectionHeading>
-                <p className='text-center text-gray-400 mt-6 max-w-2xl mx-auto'>
-                    Quantifiable improvements across performance, business metrics, and infrastructure
-                </p>
-            </div>
+        <div id='impact' className='scroll-mt-16 pt-10 md:pt-20 pb-10 md:pb-20 bg-slate-950'>
+            <div className='max-w-7xl mx-auto px-6 md:px-12'>
+                <div className='text-center mb-8 md:mb-12'>
+                    <SectionHeading data-aos="fade-down" data-aos-duration="1000">Engineering Impact</SectionHeading>
+                    <p className='text-center text-slate-400 mt-4 md:mt-6 max-w-2xl mx-auto text-sm md:text-base font-light'>
+                        Quantifiable improvements across performance, business metrics, and infrastructure
+                    </p>
+                </div>
 
-            <div className='w-[80%] mx-auto mt-12'>
                 {/* Performance Wins Table */}
-                <div className='bg-[#0f0715] border border-blue-900 rounded-lg overflow-hidden'>
+                <div className='border border-slate-800 rounded-lg overflow-hidden bg-slate-900/40 backdrop-blur-sm'>
                     <div className='overflow-x-auto'>
-                        <table className='w-full text-sm'>
+                        <table className='w-full text-xs md:text-sm'>
                             <thead>
-                                <tr className='bg-[#1a0f26] border-b border-blue-900'>
+                                <tr className='bg-slate-900/60 border-b border-slate-800'>
                                     <th className='px-6 py-4 text-left text-white font-bold'>Category</th>
                                     <th className='px-6 py-4 text-left text-white font-bold'>Metric</th>
                                     <th className='px-6 py-4 text-center text-white font-bold'>Before</th>
@@ -34,23 +34,23 @@ const EngineringImpact = () => {
                                         key={index}
                                         data-aos="fade-up"
                                         data-aos-delay={index * 50}
-                                        className='border-b border-blue-900 hover:bg-[#1a0f26] transition-colors'
+                                        className='border-b border-slate-800 hover:bg-slate-900/50 transition-colors'
                                     >
-                                        <td className='px-6 py-4'>
-                                            <span className='bg-blue-900 text-blue-200 text-xs px-3 py-1 rounded-full font-semibold'>
+                                        <td className='px-4 md:px-6 py-4'>
+                                            <span className='bg-slate-800 text-slate-300 text-xs px-2 md:px-3 py-1 rounded-full font-semibold'>
                                                 {win.category}
                                             </span>
                                         </td>
-                                        <td className='px-6 py-4 text-gray-300'>{win.metric}</td>
-                                        <td className='px-6 py-4 text-center text-gray-400'>{win.before}</td>
-                                        <td className='px-6 py-4 text-center text-emerald-300 font-bold'>{win.after}</td>
-                                        <td className='px-6 py-4 text-center'>
+                                        <td className='px-4 md:px-6 py-4 text-slate-300 text-xs md:text-sm'>{win.metric}</td>
+                                        <td className='px-4 md:px-6 py-4 text-center text-slate-400 text-xs md:text-sm'>{win.before}</td>
+                                        <td className='px-4 md:px-6 py-4 text-center text-slate-200 font-bold text-xs md:text-sm'>{win.after}</td>
+                                        <td className='px-4 md:px-6 py-4 text-center'>
                                             <div className='flex items-center justify-center gap-2'>
-                                                <FaArrowUp className='text-emerald-400 w-4 h-4' />
-                                                <span className='font-bold text-emerald-300'>{win.improvement}</span>
+                                                <FaArrowUp className='text-slate-400 w-3 h-3 md:w-4 md:h-4' />
+                                                <span className='font-bold text-slate-300 text-xs md:text-sm'>{win.improvement}</span>
                                             </div>
                                         </td>
-                                        <td className='px-6 py-4 text-gray-400 text-sm'>{win.impact}</td>
+                                        <td className='px-4 md:px-6 py-4 text-slate-400 text-xs md:text-sm font-light'>{win.impact}</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -59,29 +59,29 @@ const EngineringImpact = () => {
                 </div>
 
                 {/* Impact Cards */}
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-12'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16'>
                     {/* API Performance */}
                     <div
                         data-aos="zoom-in"
                         data-aos-delay="100"
-                        className='bg-gradient-to-br from-blue-900 to-blue-950 border border-blue-800 rounded-lg p-8'
+                        className='border border-slate-800 hover:border-slate-700 rounded-lg p-6 md:p-8 bg-slate-900/40 hover:bg-slate-900/60 backdrop-blur-sm transition-all duration-300'
                     >
                         <div className='flex items-center gap-3 mb-4'>
-                            <div className='w-12 h-12 bg-blue-800 rounded-lg flex items-center justify-center'>
-                                <FaTachometerAlt className='text-blue-300 w-6 h-6' />
+                            <div className='w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center group-hover:bg-slate-700 transition-colors'>
+                                <FaTachometerAlt className='text-slate-400 w-6 h-6' />
                             </div>
-                            <h4 className='text-lg font-bold text-white'>Performance</h4>
+                            <h4 className='text-base md:text-lg font-bold text-white'>Performance</h4>
                         </div>
                         <div className='space-y-3'>
                             <div>
-                                <p className='text-3xl font-bold text-blue-300'>62%</p>
-                                <p className='text-sm text-gray-400'>API Latency Reduction</p>
-                                <p className='text-xs text-gray-500 mt-1'>800ms &rarr; 300ms average</p>
+                                <p className='text-2xl md:text-3xl font-bold text-slate-200'>62%</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>API Latency Reduction</p>
+                                <p className='text-xs text-slate-500 mt-1'>800ms &rarr; 300ms average</p>
                             </div>
                             <div>
-                                <p className='text-2xl font-bold text-emerald-300'>94%</p>
-                                <p className='text-sm text-gray-400'>Query Optimization</p>
-                                <p className='text-xs text-gray-500 mt-1'>2.5s &rarr; 100ms queries</p>
+                                <p className='text-xl md:text-2xl font-bold text-slate-200'>94%</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>Query Optimization</p>
+                                <p className='text-xs text-slate-500 mt-1'>2.5s &rarr; 100ms queries</p>
                             </div>
                         </div>
                     </div>
@@ -90,24 +90,24 @@ const EngineringImpact = () => {
                     <div
                         data-aos="zoom-in"
                         data-aos-delay="150"
-                        className='bg-gradient-to-br from-emerald-900 to-emerald-950 border border-emerald-800 rounded-lg p-8'
+                        className='border border-slate-800 hover:border-slate-700 rounded-lg p-6 md:p-8 bg-slate-900/40 hover:bg-slate-900/60 backdrop-blur-sm transition-all duration-300'
                     >
                         <div className='flex items-center gap-3 mb-4'>
-                            <div className='w-12 h-12 bg-emerald-800 rounded-lg flex items-center justify-center'>
-                                <FaChartLine className='text-emerald-300 w-6 h-6' />
+                            <div className='w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center group-hover:bg-slate-700 transition-colors'>
+                                <FaChartLine className='text-slate-400 w-6 h-6' />
                             </div>
-                            <h4 className='text-lg font-bold text-white'>Business</h4>
+                            <h4 className='text-base md:text-lg font-bold text-white'>Business</h4>
                         </div>
                         <div className='space-y-3'>
                             <div>
-                                <p className='text-3xl font-bold text-emerald-300'>8%</p>
-                                <p className='text-sm text-gray-400'>Conversion Rate &uarr;</p>
-                                <p className='text-xs text-gray-500 mt-1'>From performance improvements</p>
+                                <p className='text-2xl md:text-3xl font-bold text-slate-200'>8%</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>Conversion Rate ↑</p>
+                                <p className='text-xs text-slate-500 mt-1'>From performance improvements</p>
                             </div>
                             <div>
-                                <p className='text-2xl font-bold text-purple-300'>12%</p>
-                                <p className='text-sm text-gray-400'>User Retention &uarr;</p>
-                                <p className='text-xs text-gray-500 mt-1'>30-day retention improved</p>
+                                <p className='text-xl md:text-2xl font-bold text-slate-200'>12%</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>User Retention ↑</p>
+                                <p className='text-xs text-slate-500 mt-1'>30-day retention improved</p>
                             </div>
                         </div>
                     </div>
@@ -116,59 +116,59 @@ const EngineringImpact = () => {
                     <div
                         data-aos="zoom-in"
                         data-aos-delay="200"
-                        className='bg-gradient-to-br from-orange-900 to-orange-950 border border-orange-800 rounded-lg p-8'
+                        className='border border-slate-800 hover:border-slate-700 rounded-lg p-6 md:p-8 bg-slate-900/40 hover:bg-slate-900/60 backdrop-blur-sm transition-all duration-300'
                     >
                         <div className='flex items-center gap-3 mb-4'>
-                            <div className='w-12 h-12 bg-orange-800 rounded-lg flex items-center justify-center'>
-                                <FaCoins className='text-orange-300 w-6 h-6' />
+                            <div className='w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center group-hover:bg-slate-700 transition-colors'>
+                                <FaCoins className='text-slate-400 w-6 h-6' />
                             </div>
-                            <h4 className='text-lg font-bold text-white'>Scale</h4>
+                            <h4 className='text-base md:text-lg font-bold text-white'>Scale</h4>
                         </div>
                         <div className='space-y-3'>
                             <div>
-                                <p className='text-2xl font-bold text-orange-300'>$15k/mo</p>
-                                <p className='text-sm text-gray-400'>Infrastructure Savings</p>
-                                <p className='text-xs text-gray-500 mt-1'>Through optimization</p>
+                                <p className='text-xl md:text-2xl font-bold text-slate-200'>$15k/mo</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>Infrastructure Savings</p>
+                                <p className='text-xs text-slate-500 mt-1'>Through optimization</p>
                             </div>
                             <div>
-                                <p className='text-3xl font-bold text-blue-300'>100k+</p>
-                                <p className='text-sm text-gray-400'>Concurrent Users</p>
-                                <p className='text-xs text-gray-500 mt-1'>Scaled from 500</p>
+                                <p className='text-2xl md:text-3xl font-bold text-slate-200'>100k+</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>Concurrent Users</p>
+                                <p className='text-xs text-slate-500 mt-1'>Scaled from 500</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Key Learnings */}
-                <div className='mt-12 bg-[#1a0f26] border border-purple-900 rounded-lg p-8'>
-                    <h3 className='text-xl font-bold text-white mb-6'>Key Engineering Learnings</h3>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                <div className='mt-16 md:mt-20 border border-slate-800 rounded-lg p-6 md:p-8 bg-slate-900/40 backdrop-blur-sm'>
+                    <h3 className='text-xl md:text-2xl font-bold text-white mb-6 md:mb-8'>Key Engineering Learnings</h3>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
                         <div className='flex gap-4'>
-                            <div className='w-1 bg-purple-400 rounded-full'></div>
+                            <div className='w-1 bg-slate-600 rounded-full flex-shrink-0'></div>
                             <div>
-                                <p className='font-bold text-white mb-1'>Scalability requires architecture thinking</p>
-                                <p className='text-sm text-gray-400'>Monolithic apps don&apos;t scale; system redesign was crucial</p>
+                                <p className='font-bold text-white mb-1 text-sm md:text-base'>Scalability requires architecture thinking</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>Monolithic apps don&apos;t scale; system redesign was crucial</p>
                             </div>
                         </div>
                         <div className='flex gap-4'>
-                            <div className='w-1 bg-blue-400 rounded-full'></div>
+                            <div className='w-1 bg-slate-600 rounded-full flex-shrink-0'></div>
                             <div>
-                                <p className='font-bold text-white mb-1'>Caching is powerful</p>
-                                <p className='text-sm text-gray-400'>Redis solved 60% of performance issues</p>
+                                <p className='font-bold text-white mb-1 text-sm md:text-base'>Caching is powerful</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>Redis solved 60% of performance issues</p>
                             </div>
                         </div>
                         <div className='flex gap-4'>
-                            <div className='w-1 bg-emerald-400 rounded-full'></div>
+                            <div className='w-1 bg-slate-600 rounded-full flex-shrink-0'></div>
                             <div>
-                                <p className='font-bold text-white mb-1'>Database design matters</p>
-                                <p className='text-sm text-gray-400'>Good schema + indexing = 10x query speed</p>
+                                <p className='font-bold text-white mb-1 text-sm md:text-base'>Database design matters</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>Good schema + indexing = 10x query speed</p>
                             </div>
                         </div>
                         <div className='flex gap-4'>
-                            <div className='w-1 bg-orange-400 rounded-full'></div>
+                            <div className='w-1 bg-slate-600 rounded-full flex-shrink-0'></div>
                             <div>
-                                <p className='font-bold text-white mb-1'>Monitoring is critical</p>
-                                <p className='text-sm text-gray-400'>Can&apos;t optimize what you don&apos;t measure</p>
+                                <p className='font-bold text-white mb-1 text-sm md:text-base'>Monitoring is critical</p>
+                                <p className='text-xs md:text-sm text-slate-400 font-light'>Can&apos;t optimize what you don&apos;t measure</p>
                             </div>
                         </div>
                     </div>

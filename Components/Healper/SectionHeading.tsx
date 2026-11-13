@@ -10,10 +10,9 @@ const SectionHeading = ({ children }: Props) => {
       data-aos="fade-up"
       data-aos-delay="100"
       data-aos-once="true"
-      className="relative w-fit mx-auto text-white text-3xl sm:text-4xl font-bold uppercase px-6 py-3 bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-800 rounded-md shadow-lg"
+      className="relative w-fit mx-auto text-white text-2xl sm:text-3xl md:text-4xl font-bold px-4 py-2 border-b-2 border-slate-600 hover:border-slate-500 transition-colors duration-300"
     >
       {children}
-      <div className="absolute bottom-0 left-0 h-1 w-full bg-pink-500 rounded-md opacity-80"></div>
     </div>
   );
 };

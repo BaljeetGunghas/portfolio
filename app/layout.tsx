@@ -4,7 +4,6 @@ import "./globals.css";
 import ResponsiveNavbar from "@/Components/Navbar/ResponsiveNavbar";
 import Footer from "@/Components/Footer/Footer";
 import ScrollToTop from "@/Components/Healper/ScrollToTop";
-import SplashCursorWrapper from "@/Components/Healper/SplashCursorWrapper";
 
 const fonts = Sora({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -95,7 +94,6 @@ export default function RootLayout({
         className={`${fonts} antialiased bg-black custom-scrollbar scroll-smooth`}
       >
         <div style={{ position: 'relative', overflow: 'hidden', zIndex: 10000 }}>
-          <SplashCursorWrapper />
           <ResponsiveNavbar />
           {children}
           <Footer />
