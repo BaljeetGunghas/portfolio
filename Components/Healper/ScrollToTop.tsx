@@ -33,10 +33,13 @@ const ScrollToTop = () => {
     }
 
     return (
-        <div className='fixed bottom-4 animate-pulse right-4'>
+        <div className='fixed bottom-4 right-4 z-40'>
             {isVisible && (
-                <button onClick={scrollToTopHandler} className='bg-blue-900 text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none  cursor-pointer'>
-                    <FaArrowUp />
+                <button
+                    onClick={scrollToTopHandler}
+                    className='group w-12 h-12 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 hover:border-slate-600 flex items-center justify-center focus:outline-none cursor-pointer transition-all duration-300 shadow-lg hover:shadow-xl'
+                >
+                    <FaArrowUp className='w-5 h-5 group-hover:-translate-y-1 transition-transform' />
                 </button>
             )}
         </div>

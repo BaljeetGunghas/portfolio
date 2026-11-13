@@ -16,24 +16,49 @@ const MobileNaveBar = ({ showNav, closeNav }: Props) => {
     const navOpen = showNav ? "translate-x-0" : "translate-x-[-100%]";
     return (
         <>
+            {/* Backdrop */}
             <div
                 onClick={closeNav}
-                className={`fixed inset-0 bg-black ${navOpen} transition-opacity duration-300 ${showNav ? 'opacity-70 pointer-events-auto' : 'opacity-0 pointer-events-none'
-                    } z-40`}
+                className={`fixed inset-0 bg-black/60 ${navOpen} transition-opacity duration-300 ${showNav ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} z-40`}
             />
-           
-            <div className={`${navOpen} text-white transform transition-all duration-500 delay-300  fixed justify-center flex   flex-col h-full w-[80%] sm:w-[60%] bg-[#0f0715] space-y-6 z-50  `}>
-                {navLinks.map((navLink) => {
-                    return (
-                        <Link href={navLink.url} key={navLink.id} onClick={closeNav}>
-                            <p className='nav__link text-[20px] ml-12 border-b-[1.5px] pb-2 border-white sm:text-[30px] '>{navLink.label}</p>
-                        </Link>
-                    )
-                })}
-                {/* {close button} */}
-                <Image src={'/images/logo.png'} alt='Baljeet gunghas' width={220} height={220} className='absolute -top-[1.1rem] -left-[1.3rem] sm:ml-0 filter invert brightness-200 contrast-150' />
-                <CgClose onClick={closeNav} className='absolute top-[1rem] right-[2rem] sm:w-8 sm:h-8 w-6 h-6 text-white cursor-pointer ' />
-                {/* </div> */}
+
+            {/* Mobile Menu */}
+            <div className={`${navOpen} text-white transform transition-all duration-500 fixed flex flex-col h-full w-[80%] sm:w-[60%] bg-slate-950 border-r border-slate-800 z-50`}>
+                {/* Close Button */}
+                <div className='flex justify-between items-center p-6 border-b border-slate-800'>
+                    <div className='flex flex-col leading-none'>
+                        <span className='text-2xl font-black text-white tracking-tighter'>
+                            Baljeet
+                        </span>
+                        <span className='text-xs font-bold text-slate-500 tracking-widest'>
+                            GUNGHAS
+                        </span>
+                    </div>
+                    <CgClose
+                        onClick={closeNav}
+                        className='w-6 h-6 cursor-pointer text-slate-400 hover:text-white transition-colors'
+                    />
+                </div>
+
+                {/* Navigation Links */}
+                <nav className='flex-1 flex flex-col gap-0 p-6'>
+                    {navLinks.map((navLink) => {
+                        return (
+                            <Link href={navLink.url} key={navLink.id} onClick={closeNav}>
+                                <p className='nav__link text-base sm:text-lg py-4 px-4 text-slate-300 hover:text-white hover:bg-slate-900/50 border-b border-slate-800/50 transition-all duration-200 font-medium'>
+                                    {navLink.label}
+                                </p>
+                            </Link>
+                        )
+                    })}
+                </nav>
+
+                {/* Footer Action */}
+                <div className='p-6 border-t border-slate-800'>
+                    <button className='w-full px-4 py-3 bg-white text-slate-950 font-semibold rounded-lg hover:bg-slate-100 transition-colors text-sm'>
+                        Get In Touch
+                    </button>
+                </div>
             </div>
         </>
     )

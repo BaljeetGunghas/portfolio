@@ -33,29 +33,41 @@ const Nav = ({ openNav }: Props) => {
     }, [])
 
     return (
-        <div className={`fixed h-[12vh] z-[10] ${navBg ? 'bg-[#240b39]' : 'fixed'} transition-all duration-300 w-full`}>
-            <div className='flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto'>
-                <Image src={'/images/logo.png'} alt='Baljeet gunghas' width={220} height={200} className='-ml-8 sm:-ml-5 filter invert brightness-200 contrast-150 object-cover' />
-                <div className='flex items-center space-x-5'>
-                    <div className='hidden lg:flex items-center space-x-6 text-sm'>
+        <div className={`fixed h-16 md:h-24 z-40 transition-all duration-300 w-full border-b ${navBg ? 'bg-slate-950/95 backdrop-blur-md border-slate-800' : 'bg-slate-950/50 backdrop-blur-sm border-slate-900'}`}>
+            <div className='flex items-center h-full justify-between max-w-7xl mx-auto px-6 md:px-12 w-full'>
+                {/* Logo - Text */}
+                <div className='flex-shrink-0 flex flex-col leading-none'>
+                    <span className='text-2xl md:text-4xl font-black text-white tracking-tighter'>
+                        Baljeet
+                    </span>
+                    <span className='text-xs md:text-sm font-bold text-slate-500 tracking-widest'>
+                        GUNGHAS
+                    </span>
+                </div>
+
+                {/* Desktop Navigation */}
+                <div className='flex items-center gap-6'>
+                    <div className='hidden lg:flex items-center gap-8'>
                         {navLinks.slice(0, 6).map((navLink) => {
                             const href = navLink.url.startsWith('#') ? `/${navLink.url}` : navLink.url;
                             return (
                                 <Link href={href} key={navLink.id}>
-                                    <p className='nav__link'>{navLink.label}</p>
+                                    <p className='nav__link text-xs md:text-sm text-slate-400 hover:text-white transition-colors font-medium'>{navLink.label}</p>
                                 </Link>
                             )
                         })}
                     </div>
-                    <div className='flex items-center space-x-4'>
+
+                    {/* CTA Button & Mobile Menu */}
+                    <div className='flex items-center gap-4'>
                         <button
                             onClick={() => router.push('/contact')}
-                            className='md:px-6 md:py-2.5 px-6 py-2 text-blue-700 font-semibold text-xs md:text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg cursor-pointer whitespace-nowrap'
+                            className='px-4 md:px-6 py-2 md:py-2.5 text-slate-950 font-semibold text-xs md:text-sm bg-white hover:bg-slate-100 transition-all duration-200 rounded-lg cursor-pointer whitespace-nowrap'
                         >
                             Let&apos;s Talk
                         </button>
+                        <HiBars3BottomRight onClick={openNav} className='w-6 h-6 md:w-7 md:h-7 cursor-pointer text-slate-300 hover:text-white lg:hidden transition-colors' />
                     </div>
-                    <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden' />
                 </div>
             </div>
         </div>

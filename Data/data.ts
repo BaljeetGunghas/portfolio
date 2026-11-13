@@ -178,32 +178,30 @@ interface Experience {
 export const experiences: Experience[] = [
   {
     company: 'NIIT',
-    role: 'Senior Full-Stack Developer',
+    role: 'Senior Software Engineer II',
     duration: 'Jun 2025 – Present',
-    description: 'Developing modern web applications with AI/GenAI integration using MERN stack. Working on multiple projects leveraging Claude AI and cutting-edge technologies.',
+    description: 'Architecting and developing full-stack web applications using React, Next.js, Node.js, Express, TypeScript, and MongoDB for enterprise learning solutions with AI/GenAI integration.',
     achievements: [
-      'Integrated Claude AI and GenAI capabilities into web applications',
-      'Worked on 12+ projects and 5+ individual assignments',
-      'Built full-stack applications using MERN stack (MongoDB, Express, React, Node.js)',
-      'Implemented AI-powered features for enhanced user experience',
-      'Collaborated with cross-functional teams on innovative solutions',
-      'Developed and maintained scalable backend systems',
-      'Created responsive and performant frontend interfaces',
+      'Architect and develop full-stack web applications using React.js, Next.js, Node.js, Express.js, TypeScript, and MongoDB for enterprise learning solutions',
+      'Design and implement AI-powered chatbots and skill assessment systems using LangChain and LLMs to automate learner evaluation and provide intelligent tutoring',
+      'Build robust RESTful APIs and high-performance backend microservices with multi-tenant authentication and Role-Based Access Control (RBAC) for secure, scalable user workflows',
+      'Develop reusable UI component libraries and implement WebSocket-based real-time communication for seamless user interactions',
+      'Integrate Generative AI capabilities to create interactive AI assistants and intelligent learning management features tracking user progress, skill proficiency, and course completion',
+      'Collaborate with product designers and business stakeholders to translate functional requirements into production-grade software features meeting enterprise standards',
     ],
     metrics: {
-      'Projects': '12+',
-      'Individual Work': '5+',
-      'Stack': 'MERN',
-      'AI Integration': 'Claude & GenAI',
-      'Tech Focus': 'Full-Stack Development',
+      'Team Size': '30-40+ engineers',
+      'Stack': 'React, Next.js, Node.js, Express, MongoDB, TypeScript',
+      'AI/LLM': 'LangChain, Generative AI',
+      'Architecture': 'Multi-tenant, RBAC, WebSockets',
     },
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Claude AI', 'GenAI', 'JavaScript', 'TypeScript', 'REST APIs'],
+    technologies: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'TypeScript', 'MongoDB', 'LangChain', 'Generative AI', 'WebSockets', 'REST APIs'],
   },
   {
-    company: 'Royalmatrimonial',
+    company: 'Royal Matrimonial',
     role: 'Senior Full-Stack Engineer & Tech Lead',
-    duration: 'Feb 2023 – Apr 2025',
-    description: 'Led full-stack development and technical decisions for a high-growth matrimonial SaaS platform serving 100k+ users.',
+    duration: 'Feb 2023 – Mar 2025',
+    description: 'Led full-stack development and technical decisions for a high-growth matrimonial SaaS platform serving 5-10k+ active users with subscription-based revenue model.',
     achievements: [
       'Led architecture redesign from monolithic to microservices → enabled 10x user growth',
       'Implemented multi-layer caching strategy reducing API latency by 62% (800ms → 300ms)',
@@ -227,7 +225,7 @@ export const experiences: Experience[] = [
   },
   {
     company: 'GoMechanic',
-    role: 'Full-Stack Engineer',
+    role: 'Frontend Engineer',
     duration: 'Oct 2022 – Feb 2023',
     description: 'Built customer-facing web pages and optimized frontend performance for on-demand automotive services platform.',
     achievements: [
@@ -251,7 +249,7 @@ export const experiences: Experience[] = [
     company: 'FareGarage',
     role: 'Frontend Engineer',
     duration: 'Jun 2022 – Oct 2022',
-    description: 'Led frontend development focusing on user experience optimization and responsive design.',
+    description: 'Developed clean, cross-device user interfaces and maintained key user-facing modules through bug fixes, UI refinements, and performance optimizations.',
     achievements: [
       'Built and maintained 15+ web pages for customer and merchant portals',
       'Conducted UX audit identifying friction points in user flows',
@@ -269,10 +267,10 @@ export const experiences: Experience[] = [
     technologies: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'Bootstrap', 'Git', 'Figma'],
   },
   {
-    company: 'Edustoke',
-    role: 'Full-Stack Engineer',
-    duration: 'Mar 2022 – Jun 2022',
-    description: 'Built and optimized pages for educational content delivery platform serving 100k+ students.',
+    company: 'edustoke',
+    role: 'Frontend Engineer',
+    duration: 'May 2022 – Jun 2022',
+    description: 'Converted high-fidelity Figma mockups into fully responsive web interfaces and collaborated using Git/GitHub workflows for front-end updates on rapid sprint cycles.',
     achievements: [
       'Created 40+ web pages from Figma designs using HTML, CSS, SASS',
       'Optimized performance for low-bandwidth users improving mobile engagement by 40%',
@@ -282,12 +280,11 @@ export const experiences: Experience[] = [
       'Improved team development velocity by 25% through better processes',
     ],
     metrics: {
-      'Pages Built': '40+',
-      'Mobile Engagement': '+40%',
-      'Merge Conflicts': '-20%',
-      'Development Velocity': '+25%',
+      'Duration': '2 months (May-Jun 2022)',
+      'Focus': 'UI Conversion from Figma',
+      'Collaboration': 'Git/GitHub Workflows',
     },
-    technologies: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'Figma', 'Git/GitHub'],
+    technologies: ['HTML5', 'SCSS', 'JavaScript (ES6+)', 'Figma', 'Git/GitHub'],
   },
 ];
 
